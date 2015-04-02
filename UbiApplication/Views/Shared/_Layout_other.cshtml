@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Fast Freight Company</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        <script src="~/Scripts/jquery-2.1.3.js"></script>
+        <script src="~/Scripts/jquery-2.1.3.min.js"></script>
+    </head>
+<body>
+    <div id="wrap">
+        <div id="global">
+            <div class="inr">
+                <div class="head">
+                    <a href="@Url.Action("Index", "Home")" class="logo">UBI</a>
+                    <ul class="h_top">
+                        <li class="quote"><a> Quote</a></li>
+                        <li class="track"><a> Track</a></li>
+                        <li class="about"><a href="@Url.Action("About", "Home")"> AboutUs</a></li>
+                        <li class="menu"><a> Menu</a></li>
+                    </ul>
+                </div>
+                <div class="tsns">
+                    <div class="sns_lst">
+                        <ul>
+                            <li>
+                                <button type="submit" class="wht_sns_fc">facebook</button>
+                            </li>
+                            <li>
+                                <button type="submit" class="wht_sns_tw">twitter</button>
+                            </li>
+                            <li>
+                                <button type="submit" class="wht_sns_yb">youtube</button>
+                            </li>
+                            <li>
+                                <button type="submit" class="wht_sns_gg">google</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tlg">
+                    <a id="loginBtn"> LOGIN / JOIN NOW</a>
+                    <input class="search" type="text" />
+                    <button type="submit" class="btn_sch">search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                @RenderSection("featured", required: false)
+                <section class="content-wrapper main-content clear-fix">
+                    @RenderBody()
+                </section>
+            </div>
+
+            <div class="dimmed"></div>
+            <div class="ly_sign">
+                <h2>UBI CUSTOMER LOGIN</h2>
+                <p>Please enter your USER ID and password to log in</p>
+                <p class="warning">That userID/password combination is not in our records.</p>
+                <div class="login_form">
+                    <div class="inp_login">
+                        <ul>
+                            <li>
+                                <div class="inp_bx" style="position:relative">
+                                    <label for="email_inp">UserID</label>
+                                    <input type="text" id="email_inp" class="inp_txt">
+                                    <p class="err_required">required</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp_bx" style="position:relative">
+                                    <label for="pwd_inp">Password</label>
+                                    <input type="password" id="pwd_inp" class="inp_txt">
+                                    <p class="err_required">required</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="extra_info">
+                        <input type="checkbox" id="rmb_chk"><label for="rmb_chk">REMEMBER ME</label>
+                        <a href="#">FORGOT PASSWORD?</a>
+                    </p>
+                    <button type="submit" class="btn btn_m_blue"><span>LOG IN</span></button>
+                    <button type="submit" class="btn btn_m_blue"><span>JOIN NOW</span></button>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+
+            <div class="ly_navi">
+                <ul class="mn_map">
+                    <li>
+                        <em>QUOTE</em>
+                        <ul>
+                            <li><a href="#">LTL</a></li>
+                            <li><a href="#">FTL</a></li>
+                            <li><a href="#">Specialized</a></li>
+                            <li><a href="#">Intermodal</a></li>
+                            <li><a href="#">Expedited</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <em>TRACK</em>
+                        <ul>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Online Document</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <em>SUPPORT</em>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <em>ABOUT US</em>
+                        <ul>
+                            <li><a href="@Url.Action("About", "Home")">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="~/Images/menub.png" />
+                    </li>
+                </ul>
+                <button class="btn_close"></button>
+            </div>
+            <div class="ly_snavi" id="quote_small">
+                <p class="nv_title">QUOTE</p>
+                <button class="btn_close"></button>
+            </div>
+            <div class="ly_snavi" id="track_small">
+                <p class="nv_title">TRACK</p>
+                <button class="btn_close"></button>
+            </div>
+
+
+        </div>
+        <!-- //content -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="inr">
+                <div class="fl">
+                    <ul class="ft_map">
+                        <li>
+                            <em>QUOTE</em>
+                            <ul>
+                                <li><a href="#">LTL</a></li>
+                                <li><a href="#">FTL</a></li>
+                                <li><a href="#">Specialized</a></li>
+                                <li><a href="#">Intermodal</a></li>
+                                <li><a href="#">Expedited</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <em>TRACK</em>
+                            <ul>
+                                <li><a href="#">Status</a></li>
+                                <li><a href="#">Online Document</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <em>SUPPORT</em>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <em>ABOUT US</em>
+                            <ul>
+                                <li><a href="@Url.Action("About", "Home")">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fl">
+                    <ul class="ft_company">
+                        <li><a href="#" class="logo">UBI</a></li>
+                        <li><p class="cp">UBi Freight Systems Inc.<br />381 Thor Place #B, Brea, CA 92821 / <a class="ftemail" href="mailto:info@ubifreight.com">info@ubifreight.com</a> / TEL: 714-990-5450 FAX: 714-509-1234<br /> © Copyright 2015 UBI Logistics, Inc. All rights reserved.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+</body>
+</html>
