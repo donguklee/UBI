@@ -117,9 +117,9 @@ button.btn_s_blue{height:22px}
 .tlg .btn_sch{width:22px;margin:9px 0px 0px 5px;height:22px;background-position:-109px 0px}
 
 /* top Menu */
-.ly_navi{position:absolute;top:0px;z-index:30;width:100%;height:384px;background:#fff;color:#4d4d4d;text-align:center;visibility:hidden}
+.ly_navi{position:absolute;top:0px;z-index:30;width:100%;height:384px;background:#fff;color:#fff;text-align:center;visibility:hidden}
 .ly_navi:after{display:block;overflow:hidden;clear:both;height:0;content:''}
-.mn_map{margin-top:30px; margin-left:auto;margin-right:auto; width:80%;min-width:850px;}
+.mn_map{margin-top:30px; margin-left:auto;margin-right:auto; width:80%;}
 .mn_map:after{display:block;overflow:hidden;clear:both;height:0;content:''}
 .mn_map>li{float:left;width:15%;padding: 0 0 0 35px;}
 .mn_map>li:first-child{border-left:0px;}
@@ -129,15 +129,28 @@ button.btn_s_blue{height:22px}
 .mn_map>li ul{margin-top:10px}
 .ly_navi .btn_close{position:absolute;bottom:20px;right:20px}
 
-/* top Navi(Quote,Track) */
-.ly_snavi{position:absolute;top:0px;right:50px;z-index:30;width:600px;height:384px;background:rgba(240,240,240,0.9);color:#4d4d4d;text-align:center;visibility:hidden}
-.ly_snavi:after{display:block;overflow:hidden;clear:both;height:0;content:''}
-.ly_snavi label{font-size:14px;font-weight:bold;text-align:left}
-.nv_title{font-size:24px;font-weight:bold;margin-top:20px;font-family:"Lucida Grande";}
-.nv_content{font-size:16px;font-weight:normal;margin-top:20px;font-family:"Lucida Grande";}
+/* top tracking */
+.ly_tracking{position:absolute;top:0px;right:50px;z-index:30;width:30%;height:300px;background:rgba(240,240,240,0.9);color:#fff;text-align:center;visibility:hidden;max-width:400px}
+.ly_tracking:after{display:block;overflow:hidden;clear:both;height:0;content:''}
+.ly_tracking ul{border-bottom:1px solid #fff; width:90%;margin-left:auto;margin-right:auto;}
+.ly_tracking li{margin-top:20px;margin-bottom:25px;}
+.ly_tracking label{font-size:14px;font-weight:bold;text-align:left;font-family:"Lucida Grande";color:#1f4a7d;}
+.ly_tracking .textbox{max-width:300px;width:30%;padding:4px;border:1px solid #7c7c7c;border-radius:3px;font-size:12px;color:#333}
+.ly_tracking .btn_close{position:absolute;bottom:20px;right:20px}
+.ly_tracking .nv_content{font-size:16px;font-weight:normal;margin-top:20px;font-family:"Lucida Grande";}
 
-.ly_snavi .textbox{max-width:300px;margin:0px 0px 0px 20px;padding:4px;border:1px solid #7c7c7c;border-radius:3px;font-size:12px;color:#333}
-.ly_snavi .btn_close{position:absolute;bottom:20px;right:20px}
+.nv_title{font-size:24px;font-weight:bold;margin-top:20px;font-family:"Lucida Grande";color:#1f4a7d;}
+
+/* top Quote */
+.ly_quote{position:absolute;top:0px;z-index:30;width:100%;height:300px;background:rgba(240,240,240,0.95);color:#fff;text-align:center;visibility:hidden}
+.ly_quote:after{display:block;overflow:hidden;clear:both;height:0;content:''}
+.ly_quote ul{border-bottom:1px solid #fff; width:90%;margin-left:auto;margin-right:auto;}
+.ly_quote li{margin-top:20px;margin-bottom:25px;}
+.ly_quote label{font-size:14px;font-weight:bold;text-align:left;font-family:"Lucida Grande";color:#1f4a7d;}
+.ly_quote .textbox{max-width:300px;width:20%;margin:0px 0px 0px 10px;padding:4px;border:1px solid #7c7c7c;border-radius:3px;font-size:12px;color:#333}
+.ly_quote .btn_close{position:absolute;bottom:20px;right:20px}
+.ly_quote .nv_content{font-size:16px;font-weight:normal;margin-top:20px;font-family:"Lucida Grande";}
+
 
 /* top SNS */
 .tsns{position:absolute;left:37px;margin-top:7px;}
@@ -186,13 +199,13 @@ button.btn_s_blue{height:22px}
 .section_sbnr{position:relative;margin-top:10px;margin-left:auto;margin-right:auto;width:80%}
 .section_sbnr:after{display:block;overflow:hidden;clear:both;height:0;content:''}
 .section_sbnr .btn_n_prev,.section_sbnr .btn_n_next{position:absolute;top:50%;z-index:2;width:18px;height:28px;}
-.section_sbnr .btn_n_prev{left:-2%;background-position:-137px -42px}
+.section_sbnr .btn_n_prev{left:-3%;background-position:-137px -42px}
 .section_sbnr .btn_n_prev:hover{background-position:-176px -42px}
 .section_sbnr .btn_n_next{right:-2%;background-position:-157px -42px}
 .section_sbnr .btn_n_next:hover{background-position:-196px -42px}
-.sbnr_lst{position:relative;margin-left:auto;margin-right:auto;top:0px; height:300px; width:1130px;}
-.sbnr_lst li{float:left;display:inline;margin-left:4px;}
-.sbnr_lst .pic{display:none;position:relative;overflow:hidden;width:370px;height:256px;border:1px solid #e2e2e2;line-height:0}
+.sbnr_lst{position:relative;margin-left:auto;margin-right:auto;top:0px; height:300px; width:75%;}
+.sbnr_lst li{float:left;display:inline;margin-left:5px;width:32%}
+.sbnr_lst .pic{display:none;position:relative;overflow:hidden;width:100%;height:256px;border:1px solid #e2e2e2;line-height:0}
 .sbnr_lst .pic>a{display:table-cell;width:150px;height:228px;background:#f5f5f5;text-align:center;vertical-align:middle;}
 .sbnr_lst .pic:hover{opacity:0.5;filter:alpha(opacity=30);}
 .sbnr_lst .text1{display:none;position:relative; left:5%; top:-45px;width:100%;font-size:24px;font-family:"Lucida Grande";color:#fff;z-index:1;font-weight:bold}

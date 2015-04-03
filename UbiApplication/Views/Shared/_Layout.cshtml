@@ -113,28 +113,50 @@
                 </ul>
                 <button class="btn_close"></button>
             </div>
-            <div class="ly_snavi" id="quote_small">
-                <p class="nv_title">QUOTE</p>
+            <div class="ly_quote" id="quote_small">
+                <ul>
+                    <li>
+                        <p class="nv_title">QUOTE</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="radio" name="quote" id="qt_ltl"> <label for="qt_ltl">Less Than Truckload</label>
+                        <input type="radio" name="quote" id="qt_ftl" style="margin-left:7%"> <label for="qt_ftl">Full Truck Load</label>
+                        <input type="radio" name="quote" id="qt_spc" style="margin-left:7%"> <label for="qt_spc">Specialized</label>
+                        <input type="radio" name="quote" id="qt_itm" style="margin-left:7%"> <label for="qt_itm">Intermodal</label>
+                        <input type="radio" name="quote" id="qt_epd" style="margin-left:7%"> <label for="qt_epd">Expedited</label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="traking_inp">From: </label>
+                        <input class="textbox" id="quote_from" type="text" />
+                        <label for="traking_inp" style="margin-left:20px">To: </label>
+                        <input class="textbox" id="quote_to" type="text" />
+                        <label for="traking_inp" style="margin-left:20px">Weight: </label>
+                        <input class="textbox" id="quote_weight" type="text" />
+                    </li>
+                </ul>
 
-                <div class="fl">
-                    <label for="first_name"> <strong>First Name</strong></label>
-                    <input type="text" id="lb_first_name" class="inp_txt" value="">                    
-                </div>
-                <div class="fr">
-                    <label for="last_name"> <strong>Last Name</strong></label>
-                    <input type="text" id="lb_last_name" class="inp_txt" value="">                    
-                </div>
-                    <button class="btn_close"></button>
-                </div>
-            <div class="ly_snavi" id="track_small">
-                <p class="nv_title">TRACK</p>
-                <p class="nv_content">Tracking your packages with Us.</p>
-                <div style="margin-top:15px">
-                    <label for="traking_inp">Tracking Number: </label>
-                    <input class="textbox" id="traking_inp" type="text" style="width:250px; height:24px" />
-                    <button type="submit" class="btn btn_m_blue"><span>Tracking</span></button>
-                </div>
-                
+                <button type="submit" class="btn btn_m_blue" style="margin-top:10px"><span>Get Quote</span></button>
+                <button class="btn_close"></button>
+            </div>
+            <div class="ly_tracking" id="track_small">
+                <ul>
+                    <li>
+                        <p class="nv_title">TRACK</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="traking_inp">Tracking Number: </label>
+                        <div style="margin-top:15px; margin-bottom:15px">                            
+                            <input class="textbox" id="traking_inp" type="text" style="width:250px; height:24px" />
+                        </div>
+                        <button type="submit" class="btn btn_m_blue"><span>Tracking</span></button>
+                    </li>
+                </ul>
                 <button class="btn_close"></button>
             </div>
 
